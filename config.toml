@@ -1,3 +1,5 @@
 baseURL = "http://blood-and-dust.com/"
+enableEmoji = true
 languageCode = "en-us"
 title = "Blood and Dust"
+theme = "bloodanddust"
