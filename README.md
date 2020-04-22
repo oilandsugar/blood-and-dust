@@ -1,2 +1,2 @@
 # blood-and-dust
-Blood ad dust website
+Blood and dust website
