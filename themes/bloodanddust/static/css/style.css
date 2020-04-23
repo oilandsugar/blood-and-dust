@@ -3,10 +3,9 @@
 ---------------------------------*/
 
 :root {
---backColor: #0D0B0A;
---textColor: #A3BF93;
+  --backColor: #0d0b0a;
+  --textColor: #a3bf93;
 }
-
 
 /* --------------------------------
 //////// BASIC STRUCTURE //////////
@@ -14,23 +13,29 @@
 
 html {
   min-height: 100%;
-  height: 100%;
-  font-size: 18px;
+  font-size: 20px;
+  width: 100%;
 }
 
 body {
   font-size: 1em;
-  font-family: serif;
+  font-family: "IM Fell DW Pica", serif;
   font-weight: 500;
   min-height: 100%;
-  height: 100%;
+  width: 100%;
   line-height: 1.5em;
-  color:var(--textColor);
+  color: var(--textColor);
+  background-color: var(--backColor);
 }
 
 .wrap {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hidden {
+  display: none;
 }
 
 /* -------- FLEX ---------*/
@@ -90,9 +95,95 @@ body {
   flex: 6;
 }
 
+/* -------- PADDING ---------*/
+
+.small-padding {
+  padding: 15px;
+}
+
+.small-padding-left {
+  padding-left: 15px;
+}
+
+.small-padding-right {
+  padding-right: 15px;
+}
+
+.small-padding-top {
+  padding-top: 15px;
+}
+
+.small-padding-bottom {
+  padding-bottom: 15px;
+}
+
+.medium-padding {
+  padding: 30px;
+}
+
+.medium-padding-top {
+  padding-top: 30px;
+}
+
+.medium-padding-bottom {
+  padding-bottom: 30px;
+}
+
+.medium-padding-right {
+  padding-right: 30px;
+}
+
+.medium-padding-left {
+  padding-left: 30px;
+}
+
+.big-padding {
+  padding: 60px;
+}
+
+.big-padding-top {
+  padding-top: 60px;
+}
+
+.big-padding-bottom {
+  padding-bottom: 60px;
+}
+
+.big-padding-left {
+  padding-left: 60px;
+}
+
+.big-padding-right {
+  padding-right: 60px;
+}
+
 /* --------------------------------
 //////////// TYPOGRAPHY ///////////
 ---------------------------------*/
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.separator {
+  max-width: 150px;
+  margin: 0 auto;
+  height: 20px;
+  line-height: 11px;
+}
+
+a {
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+}
 
 /* --------------------------------
 //////////// NAVIGATION ///////////
@@ -102,10 +193,86 @@ body {
 //////////// CONTENT //////////////
 ---------------------------------*/
 
+/* -------- HOME PAGE ---------*/
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.hero-img .back-img {
+  opacity: 0.5;
+  width: 100%;
+}
+
+.hero-logo-desc {
+  font-style: italic;
+}
+
+.hero-logo-desc p {
+  font-size: 28px;
+}
+
+.hero-logo {
+  text-align: center;
+  max-width: 400px;
+  margin: 400px auto 0 auto;
+}
+
+.hero-logo img {
+  width: 100%;
+}
+
 /* --------------------------------
 //////////// FOOTER ///////////////
 ---------------------------------*/
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
+  .hero-img .back-img {
+    margin-top: -280px;
+  }
+}
 
+@media screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block !important;
+  }
+  .hero-logo {
+    margin-top: 420px;
+  }
+  .hero-logo img {
+    width: 100%;
+  }
+  .home-bio .flex-row {
+    display: block;
+  }
+  .home-bio {
+    text-align: center;
+  }
+  .home-bio .align-right {
+    text-align: inherit;
+    padding: 0 0 24px 0;
+  }
+  .home-bio .medium-padding-left {
+    padding: 0;
+  }
+  .big-padding-top {
+    padding-top: 40px;
+  }
+  .big-padding-bottom {
+    padding-bottom: 40px;
+  }
+  .hero-img .back-img {
+    width: 250%;
+    transform: translate(-25%);
+    margin-top: -143px;
+  }
 }
