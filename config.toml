@@ -3,3 +3,12 @@ enableEmoji = true
 languageCode = "en-us"
 title = "Blood and Dust"
 theme = "bloodanddust"
+
+[[menu.main]]
+name = "Visuals"
+url = "/visuals/"
+weight = 1
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
