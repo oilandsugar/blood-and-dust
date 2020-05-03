@@ -5,10 +5,14 @@ title = "Blood and Dust"
 theme = "bloodanddust"
 
 [[menu.main]]
+name = "Music"
+url = "https://blood-and-dust.bandcamp.com/"
+weight = 1
+[[menu.main]]
 name = "Visuals"
 url = "/visuals/"
-weight = 1
+weight = 2
 [[menu.main]]
 name = "About"
 url = "/about/"
-weight = 2
+weight = 3

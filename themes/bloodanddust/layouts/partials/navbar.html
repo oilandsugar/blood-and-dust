@@ -1,10 +1,14 @@
-<nav class="main-nav menu desktop">
+<nav class="main-nav desktop">
   <div class="big-wrap">
+    <div class="logo">
+      <a href="/"><img src="/img/logo-long.svg"/></a>
+    </div>
     <div class="menu">
       {{ $currentPage := . }} {{ range .Site.Menus.main }}
-      <a class="menu-item" href="{{ .URL | absLangURL }}">
-        {{ .Name }}
-      </a>
+        <span class="dot"><img src="/img/dot.svg"/></span>
+        <a class="menu-item" href="{{ .URL | absLangURL }}">
+          <h2>{{ .Name }}</h2>
+        </a>
       {{ end }}
     </div>
   </div>

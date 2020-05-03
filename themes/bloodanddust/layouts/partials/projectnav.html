@@ -1,0 +1,7 @@
+<div class="project-nav">
+  <div class="slider">
+    {{ range where $.Site.Pages "Type" "visuals" }}
+      {{ partial "visualproject.html" . }}
+    {{ end }}
+  </div>
+</div>
