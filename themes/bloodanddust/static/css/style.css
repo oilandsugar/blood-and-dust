@@ -6,6 +6,7 @@
   --backColor: #0d0b0a;
   --textColor: #a3bf93;
   --textColorDarker: #3d4234;
+  --accentColor: #922d2d;
 
   --spacing_xxs: 4px;
   --spacing_xs: 8px;
@@ -272,6 +273,7 @@ a {
 
 a:hover {
   font-style: italic;
+  color:var(--accentColor);
 }
 
 /* --------------------------------
