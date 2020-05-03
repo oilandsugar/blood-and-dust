@@ -232,7 +232,6 @@ h4 {
 }
 
 p {
-  margin-bottom: var(--spacing_md);
 }
 
 .italic {
@@ -280,7 +279,7 @@ a:hover {
 ---------------------------------*/
 
 .main-nav {
-  padding: var(--spacing_sm);
+  padding:var(--spacing_sm) var(--spacing_lg);
 }
 
 .main-nav .logo {
@@ -379,7 +378,7 @@ a:hover {
 /* --- visuals --- */
 
 .slider {
-  padding:0 var(--spacing_xs);
+  padding:0 var(--spacing_md);
 }
 
 .project.visual {
@@ -433,16 +432,30 @@ a:hover {
 
 .visual-grid {
   display:grid;
-  margin:0 var(--spacing_sm);
+  margin:0 var(--spacing_lg);
   grid-template-rows: auto;
-  grid-template-columns: 25% repeat(3, 1fr 12.5925%) 1fr 25%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: var(--spacing_lg);
+  row-gap: var(--spacing_lg);
 }
 
 .visual-grid header {
-  grid-column: 3 / 8;
+  grid-column: 3 / 6;
   padding-bottom:var(--spacing_md);
-  border-bottom:2px solid;
+  margin-bottom:var(--spacing_md);
+  text-align:center;
 }
+
+.grid-item {
+  margin: var(--spacing)
+}
+
+@media screen and (max-width:480px) {
+  .visual-grid {
+    display:block;
+  }
+}
+
 
 /* --------------------------------
 //////////// FOOTER ///////////////
