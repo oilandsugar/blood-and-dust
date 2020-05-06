@@ -3,9 +3,9 @@
 ---------------------------------*/
 
 :root {
-  --backColor: #0d0b0a;
+  --backColor: #110f0f;
   --textColor: #a3bf93;
-  --textColorDarker: #3d4234;
+  --textColorDarker: #484847;
   --accentColor: #922d2d;
 
   --spacing_xxs: 4px;
@@ -87,6 +87,10 @@ img {
 
 .hidden {
   display: none;
+}
+
+.mobile {
+  display:none;
 }
 
 /* -------- FLEX ---------*/
@@ -213,6 +217,8 @@ img {
 ---------------------------------*/
 
 h1 {
+  font-family: 'Mandrita Display SSi';
+  text-transform: uppercase;
   font-size:var(--extra_large_font_size);
   line-height:var(--extra_large_line_height);
 }
@@ -301,6 +307,16 @@ a:hover {
   vertical-align: top;
 }
 
+.menu-item {
+  width:70px;
+  display:inline-block;
+  text-align:center;
+}
+
+.menu-item.active {
+  color: var(--accentColor);
+}
+
 .menu h2 {
   display:inline-block;
 }
@@ -314,6 +330,45 @@ a:hover {
 .dot img {
   max-width:7px;
   height:auto;
+}
+
+.symbols {
+  width:40px;
+  float:right;
+}
+
+.mobile-menu {
+  padding-bottom:var(--spacing_sm);
+}
+
+.mobile-menu .logo {
+  margin: 19px 0 0 var(--spacing_md);
+  max-width:120px;
+}
+
+.menu-button {
+  width: 30px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.menu-content {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: var(--backColor);
+  padding:var(--spacing_md);
+  z-index:1000;
+}
+
+.menu-content .close {
+  width: 30px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 /* --------------------------------
@@ -380,7 +435,32 @@ a:hover {
 /* --- visuals --- */
 
 .slider {
-  padding:0 var(--spacing_md);
+  position:relative;
+}
+
+.slick-prev, .slick-next {
+  border:0;
+  background:transparent;
+  position:absolute;
+  top:0;
+  height:166px;
+  padding:0;
+  z-index:100;
+  width:60px;
+  color:transparent;
+  cursor:pointer;
+}
+
+.slick-prev:focus, .slick-next:focus {
+  outline:0;
+}
+
+.slick-prev {
+  left:0;
+}
+
+.slick-next {
+  right:0;
 }
 
 .project.visual {
@@ -439,6 +519,7 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   column-gap: var(--spacing_lg);
   row-gap: var(--spacing_lg);
+  justify-items: stretch;
 }
 
 .visual-grid header {
@@ -448,8 +529,45 @@ a:hover {
   text-align:center;
 }
 
+.visual-grid header h1 {
+  font-size:80px;
+  line-height: 72px;
+  padding:0 var(--spacing_md);
+  margin-bottom:var(--spacing_md);
+  text-align:center;
+}
+
+.visual-grid header .description {
+  font-size:var(--large_font_size);
+  line-height:var(--medium_line_height);
+}
+
 .grid-item {
-  margin: var(--spacing)
+  overflow:hidden;
+  position:relative;
+  line-height:0;
+}
+
+.grid-item p {
+  width:100%;
+  height:100%;
+}
+
+.grid-item img {
+  object-fit: cover;
+}
+
+.grid-item.image-fill img {
+  max-width:none;
+  width:auto;
+  max-height:100%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width:480px) {
@@ -466,11 +584,15 @@ a:hover {
 .stay-safe {
   width: 250px;
   height: 100px;
-  margin-right: 16px;
-  margin-bottom: 16px;
+  margin-right: var(--spacing_lg);
+  margin-bottom: var(--spacing_lg);
   float: right;
   opacity: 0.1;
   transition: 0.5s;
+}
+
+.stay-safe a {
+  line-height:0;
 }
 
 .stay-safe:hover {
@@ -480,6 +602,14 @@ a:hover {
 @media screen and (min-width: 1200px) {
   .hero-img .back-img {
     margin-top: -280px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .visual-grid header h1 {
+    padding:0;
+    font-size:60px;
+    line-height:55px;
   }
 }
 
@@ -517,12 +647,33 @@ a:hover {
   }
   .hero-img .back-img {
     width: 250%;
+    max-width: 250%;
     transform: translate(-25%);
-    margin-top: -143px;
+    margin-top: -100px;
   }
   .stay-safe {
     margin-left: auto;
     margin-right: auto;
     float: none;
+  }
+  .visual-grid header h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .visual-grid header .description {
+    font-size: var(--medium_font_size);
+    line-height:var(--small_line_height);
+  }
+  .projects-grid {
+    padding: 0 var(--spacing_sm);
+  }
+  .project.visual {
+    margin-bottom: var(--spacing_md);
+  }
+  .project.visual h2 {
+    opacity:1;
+  }
+  .grid-item {
+    margin-bottom:var(--spacing_sm);
   }
 }

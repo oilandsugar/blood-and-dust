@@ -4,6 +4,8 @@ jQuery(function($) {
       infinite: true,
       slidesToShow: 5,
       slidesToScroll: 5,
+      centerMode: true,
+      dots: false,
       responsive: [
         {
           breakpoint: 1024,
@@ -27,6 +29,22 @@ jQuery(function($) {
           }
         }
       ]
+    });
+
+    // mobile menu {
+    $('.menu-button').click(function() {
+      $('.menu-content').addClass('visible');
+      $('.menu-content').removeClass('hidden');
+    });
+
+    $('.menu-content').find('.close').click(function() {
+      $('.menu-content').removeClass('visible');
+      $('.menu-content').addClass('hidden');
+    });
+
+    $('.menu-content').find('a').click(function() {
+      $('.menu-content').removeClass('visible');
+      $('.menu-content').addClass('hidden');
     });
   });
 });

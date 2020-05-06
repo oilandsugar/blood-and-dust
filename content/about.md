@@ -1,5 +1,5 @@
 ---
-title: About Blood and Dust
+title: About
 type: single
 ---
 

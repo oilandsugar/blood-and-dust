@@ -5,10 +5,10 @@
   {{ partial "projectnav" . }}
   <section class="content big-padding-top big-padding-bottom">
     <div class="big-wrap">
-      <div class="visual-grid">
+      <div class="visual-grid" style="color:#{{ .Params.color }}">
         <header>
           <h1 class="title">{{ .Title }}</h1>
-          <p class="description darker">{{ .Description }}</p>
+          <p class="description darker" style="color:#{{ .Params.secondaryColor }}">{{ .Description }}</p>
         </header>
         {{ .Content }}
       </div>
