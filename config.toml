@@ -3,3 +3,15 @@ enableEmoji = true
 languageCode = "en-us"
 title = "Blood and Dust"
 theme = "bloodanddust"
+
+[[menu.main]]
+name = "Music"
+url = "https://blood-and-dust.bandcamp.com/"
+weight = 1
+[[menu.main]]
+name = "Merch"
+url = "https://blood-and-dust.bandcamp.com/merch/"
+weight = 2
+
+[markup.goldmark.renderer]
+unsafe= true

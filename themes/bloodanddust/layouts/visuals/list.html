@@ -1,0 +1,15 @@
+{{ partial "header" . }}
+{{ partial "navbar" . }}
+{{ partial "mobilemenu" . }}
+
+<!-- Main -->
+<div id="main" class="big-padding-top big-padding-bottom">
+  <section class="big-padding-bottom">
+    <div class="projects-grid">
+      {{ range where .Pages "Type" "visuals" }}
+        {{ partial "visualproject.html" . }}
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ partial "footer" . }}
