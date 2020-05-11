@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Mandrita Display SSi';
+    src: url('MandritaDisplaySSi.woff2') format('woff2'),
+        url('MandritaDisplaySSi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

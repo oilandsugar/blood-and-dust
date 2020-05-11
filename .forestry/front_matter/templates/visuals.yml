@@ -1,0 +1,27 @@
+---
+label: Visuals
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  description: Title of the project
+  config:
+    required: true
+- type: file
+  name: cover
+  label: Cover image
+- type: text
+  name: description
+  label: Description
+  description: Short introduction to the project
+- type: text
+  name: color
+  label: Main text color
+- type: text
+  name: secondaryColor
+  label: Darker text color
+- type: text
+  name: type
+  label: type
+  default: visuals

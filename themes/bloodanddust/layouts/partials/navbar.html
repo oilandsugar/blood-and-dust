@@ -1,16 +1,22 @@
-<nav class="main-nav menu desktop">
+{{ $current := . }}
+<nav class="main-nav desktop">
   <div class="big-wrap">
-    <div class="menu-left">
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-        <a class="menu-item" href="{{ .URL | absLangURL }}">
-          {{ .Name }}
+    <div class="logo">
+      <a href="/"><img src="/img/logo-long.svg"/></a>
+    </div>
+    <div class="menu">
+      {{ $currentPage := . }} {{ range .Site.Menus.main }}
+      {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+      {{ $active = or $active (eq .Name $current.Title) }}
+      {{ $active = or $active (and (eq .Name "Visuals") (eq $current.Section "visuals")) }}
+        <span class="dot"><img src="/img/dot.svg"/></span>
+        <a class="menu-item {{ if $active }}active{{ end }}" href="{{ .URL | absLangURL }}">
+          <h2>{{ .Name }}</h2>
         </a>
       {{ end }}
     </div>
-    <div class="social">
-      <a href="{{ .Site.Params.instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
-      <a href="{{ .Site.Params.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
+    <div class="symbols">
+      <img src="/img/symbols.svg"/>
     </div>
   </div>
 </nav>
