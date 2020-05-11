@@ -1,0 +1,22 @@
+---
+label: Visuals
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: file
+  name: cover
+  label: cover
+- type: text
+  name: description
+  label: description
+- type: text
+  name: color
+  label: color
+- type: text
+  name: secondaryColor
+  label: secondaryColor
