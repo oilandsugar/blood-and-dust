@@ -576,6 +576,18 @@ a:hover {
   }
 }
 
+/* --- Politics --- */
+
+.politics {
+  font-size:30px;
+  text-align:center;
+  line-height:35px;
+}
+
+.politics p {
+margin-bottom:var(--spacing_sm);
+margin-top:var(--spacing_sm);
+}
 
 /* --------------------------------
 //////////// FOOTER ///////////////

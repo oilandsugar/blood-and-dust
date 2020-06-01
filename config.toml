@@ -12,6 +12,10 @@ weight = 1
 name = "Merch"
 url = "https://blood-and-dust.bandcamp.com/merch/"
 weight = 2
+[[menu.main]]
+name = "Politics"
+url = "/politics/"
+weight = 3
 
 [markup.goldmark.renderer]
 unsafe= true
