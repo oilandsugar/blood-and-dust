@@ -25,3 +25,6 @@ secondaryColor: 3b3432
 {{% gridItem start="2" end="7" %}}
 ![](/img/memento-mori/memento-mori-11.png)
 {{% /gridItem %}}
+{{% gridItem start="3" end="6" %}}
+![](/img/memento-mori/memento-mori-illu-2.png)
+{{% /gridItem %}}

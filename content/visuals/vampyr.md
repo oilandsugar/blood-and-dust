@@ -1,5 +1,4 @@
 ---
-
 title: Vampyr
 type: visuals
 cover: /img/vampyr-cover.png
@@ -28,6 +27,9 @@ secondaryColor: 5d1616
 {{% /gridItem %}}
 {{% gridItem start="2" end="7" %}}
 ![](/img/vampyr/vampyr-5.png)
+{{% /gridItem %}}
+{{% gridItem start="3" end="6" %}}
+![](/img/vampyr/vampyr-illu-3.png)
 {{% /gridItem %}}
 {{% gridItem start="2" end="7" %}}
 ![](/img/vampyr/vampyr-8.png)
