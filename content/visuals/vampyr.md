@@ -1,12 +1,24 @@
 ---
 title: Vampyr
-type: visuals
-cover: /img/vampyr-cover.png
-description: Answer the distant calls of the creatures of the night
+cover: "/img/vampyr-cover.png"
+description: 'Oh wretched, delicate creature, how long have you lived in your castle
+  made of stone? Your skin is bloodless, your claws are long. You are married to darkness,
+  but you have never forgotten the sun. Where is your family? The bones are your friends
+  now, for you are the teller of untold tales, the keeper of the unkept. Your lovers
+  may offer you their throat, but still your jaw locks and your heart breaks. Nothing
+  ever feels like it is yours to take. How long have you suffered? How long have you
+  carried the weight of rotting bones as they long to rest in dawn’s embrace? I can
+  see that you are tired, but still you sing songs in the crypts of your ancestors,
+  in the absence of all life. You were born dead, but you fight the darkest night.
+  You are strange, dear creature. And you can learn to love your loneliness—but you
+  must love your madness, too. And know one day that the light shall hold you again,
+  releasing the pain like ash in the wind.
+
+'
 color: 9a0510
 secondaryColor: 5d1616
----
 
+---
 {{% gridItem start="2" end="7" %}}
 ![](/img/vampyr/vampyr-3.png)
 {{% /gridItem %}}
