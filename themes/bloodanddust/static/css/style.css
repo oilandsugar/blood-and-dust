@@ -435,6 +435,22 @@ a:hover {
 
 /* --- visuals --- */
 
+.projects-grid {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-grid .project.visual h2 {
+  opacity:0;
+}
+
+.projects-grid .project.visual:hover h2 {
+  opacity:0;
+}
+
 .slider {
   position: relative;
 }
@@ -468,21 +484,47 @@ a:hover {
 
 .project.visual {
   margin: var(--spacing_xs);
-  border-radius: 4px;
   overflow: hidden;
-  height: 150px;
+  height: auto;
+  width:calc(33.3333% - var(--spacing_sm));
+  position: relative;
+}
+
+.project.visual .cover {
   line-height: 0;
+  height:300px;
   transition: 0.5s;
+  border-radius: 4px;
   background-color: #798465;
   background-size: cover;
-  background-blend-mode: multiply;
-  position: relative;
-  background-position: center;
   filter: grayscale(40%);
   -webkit-filter: grayscale(40%);
   -moz-filter: grayscale(40%);
   -ms-filter: grayscale(40%);
   -o-filter: grayscale(40%);
+  background-blend-mode: multiply;
+}
+
+.project.visual .cover-inside {
+
+}
+
+.project.visual .description {
+  text-align:center;
+  padding: var(--spacing_md);
+  position:relative;
+  z-index:10;
+}
+
+.project.visual .description span {
+  color: var(--textColorDarker);
+}
+
+.project.visual .description h1 {
+  line-height: 0.9em;
+  margin-bottom: var(--spacing_sm);
+  margin-top:-40px;
+  transition:0.5s;
 }
 
 .project.visual h2 {
@@ -491,16 +533,25 @@ a:hover {
   text-align: center;
   padding: 0 var(--spacing_md);
   display: block;
-  line-height: 150px;
+  line-height: 300px;
   width: 100%;
   font-size: 32px;
   box-sizing: border-box;
   opacity: 0;
-  transition: 0.3s;
+  transition: opacity 0.3s;
   font-style: italic;
 }
 
-.project.visual:hover {
+.project.visual:hover a .description {
+  font-style:normal;
+  color: var(--textColor);
+}
+
+.project.visual:hover h1 {
+  color:var(--accentColor);
+}
+
+.project.visual:hover .cover {
   background-color: var(--textColor);
   border-radius: 4px;
   overflow: hidden;
@@ -573,6 +624,18 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
+.project-nav .project.visual .cover {
+  height:150px;
+}
+
+.project-nav .project.visual h2 {
+  line-height:150px;
+}
+
+.project-nav .project.visual .description {
+  display:none;
+}
+
 @media screen and (max-width: 480px) {
   .visual-grid {
     display: block;
@@ -638,6 +701,10 @@ a:hover {
     font-size: 60px;
     line-height: 55px;
   }
+
+  .project.visual {
+    width:calc(50% - var(--spacing_md));
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -694,12 +761,24 @@ a:hover {
   }
   .projects-grid {
     padding: 0 var(--spacing_sm);
+    flex-direction:column;
+  }
+  .projects-grid .project.visual {
+    height:auto;
+    width:calc(100% - var(--spacing_md));
+  }
+  .projects-grid .project.visual h1 {
+    font-size: 35px;
+    margin-top:-30px;
   }
   .project.visual {
     margin-bottom: var(--spacing_md);
+    height: 150px;
+    width:auto;
   }
   .project.visual h2 {
     opacity: 1;
+    line-height: 150px;
   }
   .grid-item {
     margin-bottom: var(--spacing_sm);

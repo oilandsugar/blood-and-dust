@@ -9,13 +9,18 @@ name = "Music"
 url = "https://blood-and-dust.bandcamp.com/"
 weight = 1
 [[menu.main]]
-name = "Merch"
-url = "https://blood-and-dust.bandcamp.com/merch/"
+name = "Visuals"
+url = "/visuals/"
 weight = 2
 [[menu.main]]
 name = "Politics"
 url = "/politics/"
 weight = 3
+[[menu.main]]
+name = "Merch"
+url = "https://blood-and-dust.bandcamp.com/merch/"
+weight = 4
+
 
 [markup.goldmark.renderer]
 unsafe= true

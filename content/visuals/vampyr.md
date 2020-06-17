@@ -12,11 +12,12 @@ description: 'Oh wretched, delicate creature, how long have you lived in your ca
   in the absence of all life. You were born dead, but you fight the darkest night.
   You are strange, dear creature. And you can learn to love your loneliness—but you
   must love your madness, too. And know one day that the light shall hold you again,
-  releasing the pain like ash in the wind.
-
-'
+  releasing the pain like ash in the wind.'
 color: 9a0510
 secondaryColor: 5d1616
+shortDescription: 'Oh wretched, delicate creature, how long have you lived in your castle
+  made of stone? Your skin is bloodless, your claws are long. You are married to darkness,
+  but you have never forgotten the sun.'
 
 ---
 {{% gridItem start="2" end="7" %}}

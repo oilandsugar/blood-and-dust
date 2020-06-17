@@ -10,9 +10,9 @@ description: 'Look through the flame, and tell us what you see. Clench your ash-
   words into the unknown. Make small offerings of things you’ve found along life’s
   dusty paths, such as fragile carapaces that no longer sing but remain untouched
   in forsaken beauty. Blow out the candle, and sit in the darkness till you find what
-  you’ve been too afraid to know.
-
-'
+  you’ve been too afraid to know.'
+shortDescription: 'Look through the flame, and tell us what you see. Clench your ash-stained
+  claws—gaunt from centuries beyond your reckoning—to hold the vision in place.'
 
 ---
 {{% gridItem start="2" end="7" %}}

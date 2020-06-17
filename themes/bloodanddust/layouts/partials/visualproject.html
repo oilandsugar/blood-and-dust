@@ -1,7 +1,13 @@
-<div class="project visual" style="background-image:url({{ with .Params.cover }}{{ . }}{{ end }})">
+<div class="project visual">
   <a href="{{ .Permalink }}">
-    <div class="cover" >
-      <h2>{{ .Title }}</h2>
+    <div class="cover" style="background-image:url({{ with .Params.cover }}{{ . }}{{ end }})">
+      <div class="cover-inside">
+        <h2>{{ .Title }}</h2>
+      </div>
+    </div>
+    <div class="description">
+      <h1 class="title">{{ .Title }}</h1>
+      <span>{{ .Params.shortDescription }}</span>
     </div>
   </a>
 </div>
