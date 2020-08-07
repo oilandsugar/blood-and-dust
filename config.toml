@@ -24,3 +24,6 @@ weight = 4
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[params]
+newAlbumOut = true

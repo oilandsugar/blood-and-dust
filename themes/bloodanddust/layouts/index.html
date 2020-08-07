@@ -3,10 +3,25 @@
 <!-- Home page -->
 
 <div class="hero-img">
-  <img class="back-img" src="./img/back.png" />
+  <img class="back-img" src="./img/back-rites.png" />
 </div>
 <section>
   <div class="wrap">
+    {{ if .Site.Params.newAlbumOut }}
+    <div class="new-album align-center">
+      <a href="https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust"><img src="./img/rites-of-blood-and-dust.jpg" /></a>
+      <h2 class="announcement">New album "Rites of Blood and Dust" is out now</h2>
+      <div class="separator"><img src="./img/separator.svg" /></div>
+        <a href="https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust">Get it on Bandcamp now</a>
+      <div class="separator"><img src="./img/separator.svg" /></div>
+      <small class="darker small-print">
+        100% of the profits (other than Bandcamp’s 15% cut) will be donated, on a rotating weekly basis to The Okra Project (NYC), and Taking What We Need (Montréal). The money made from our album sales will continue to be donated for the foreseeable future.
+      </small>
+    </div>
+    {{ end }}
+    {{ if not .Site.Params.newAlbumOut }}
+      <div class="home-spacer"></div>
+    {{ end }}
     <div class="hero-logo">
       <img src="./img/logo.svg" />
       <div
