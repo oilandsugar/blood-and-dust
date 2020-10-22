@@ -25,3 +25,5 @@ fields:
   name: type
   label: type
   default: visuals
+pages:
+- content/visuals/no-exit.md
