@@ -7,3 +7,8 @@ secondaryColor = ""
 title = "No Exit"
 
 +++
+{{% gridItem start="2" end="7" %}}
+
+![](/img/dsc01604.jpg)
+
+{{% /gridItem%}}
