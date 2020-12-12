@@ -1,13 +1,14 @@
-+++
-color = ""
-cover = "/img/no-exit/dsc01562.jpg"
-description = "You walk home, tracing the edge that separates the darkness from the mercury blue of midnight. Normally you like the metallic sounds, the acrid smells, the things you see rising from the muddied cracks in the asphalt. But these places you know are not safe anymore. Something is moving closer. Something is almost here. You can feel the bloodless face of death peering at you from the hollow, wet places of the city. You hold your breath and run. You no longer recognize these streets, this world. Every curtain closed, every light extinguished. Every ending a wire fence, writhing vines, weeping sewers, the endless void. What can you do but wait? Do you face it in hopes of mercy, or do you turn away and pray? Do you write a message using your blood? Either way the claw will reap your heart. Either way your screams will go unanswered. Either way there is no exit."
-shortDescription = "You walk home, tracing the edge that separates the darkness from the mercury blue of midnight. Normally you like the metallic sounds, the acrid smells, the things you see rising from the muddied cracks in the asphalt. But these places you know are not safe anymore. Something is moving closer. Something is almost here."
-draft = false
-secondaryColor = ""
-title = "No Exit"
+---
+color: ""
+cover: "/img/no-exit/dsc01562.jpg"
+description: "You walk home, tracing the edge that separates the darkness from the mercury blue of midnight. Normally you like the metallic sounds, the acrid smells, the things you see rising from the muddied cracks in the asphalt. But these places you know are not safe anymore. Something is moving closer. Something is almost here. You can feel the bloodless face of death peering at you from the hollow, wet places of the city. You hold your breath and run. You no longer recognize these streets, this world. Every curtain closed, every light extinguished. Every ending a wire fence, writhing vines, weeping sewers, the endless void. What can you do but wait? Do you face it in hopes of mercy, or do you turn away and pray? Do you write a message using your blood? Either way the claw will reap your heart. Either way your screams will go unanswered. Either way there is no exit."
+shortDescription: "You walk home, tracing the edge that separates the darkness from the mercury blue of midnight. Normally you like the metallic sounds, the acrid smells, the things you see rising from the muddied cracks in the asphalt. But these places you know are not safe anymore. Something is moving closer. Something is almost here."
+draft: false
+secondaryColor: ""
+title: "No Exit"
+date: "2020-10-23"
 
-+++
+---
 
 {{% gridItem start="2" end="7" %}}
 ![](/img/no-exit/dsc01562.jpg)

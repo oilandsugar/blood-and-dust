@@ -1,5 +1,6 @@
 ---
 title: Vampyr
+date: "2019-12-11"
 cover: "/img/vampyr-cover.png"
 description: 'Oh wretched, delicate creature, how long have you lived in your castle
   made of stone? Your skin is bloodless, your claws are long. You are married to darkness,

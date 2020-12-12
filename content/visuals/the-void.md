@@ -1,5 +1,6 @@
 ---
 title: The Void, Transmuted
+date: "2020-01-29"
 cover: "/img/body-horror-cover.png"
 description: "Enshrouded, wrapped in layers that bend light and obscure form, there
   is something waiting to to emerge. Incubation, transmutation. It begins as a pulsing

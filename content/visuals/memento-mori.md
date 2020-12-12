@@ -1,5 +1,6 @@
 ---
 title: Memento Mori
+date: "2020-05-04"
 cover: "/img/memento-mori-cover.png"
 description: 'Remember that you will die. Remember that life is a gift; but it is
   not ours to keep forever. Flesh wrapped in bone will one day unravel, and worms
