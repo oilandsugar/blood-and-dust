@@ -552,6 +552,8 @@ a:hover {
   margin-bottom: var(--spacing_sm);
   margin-top:-40px;
   transition:0.5s;
+  word-break: break-word;
+  font-size:35px;
 }
 
 .project.visual h2 {
@@ -616,6 +618,7 @@ a:hover {
   padding: 0 var(--spacing_md);
   margin-bottom: var(--spacing_md);
   text-align: center;
+  word-break: break-word;
 }
 
 .visual-grid header .description {
@@ -656,7 +659,8 @@ a:hover {
 }
 
 .project-nav .project.visual h2 {
-  line-height:150px;
+  top: 46px;
+  line-height: 1em;
 }
 
 .project-nav .project.visual .description {
