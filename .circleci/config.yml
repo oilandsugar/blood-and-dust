@@ -15,7 +15,7 @@ workflows:
           filters:
             branches:
               only:
-               - master 
+                - master
 
 jobs:
   deploy:
@@ -33,4 +33,10 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
                 aws s3 sync public s3://blood-and-dust.com/ --delete
+            fi
+      - run:
+          name: Invalidate Cloudfront Cache
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "dev" ]; then
+                aws cloudfront create-invalidation --cli-input-json "{\"DistributionId\":\"E2WSVCGC2P3LW\",\"InvalidationBatch\":{\"Paths\":{\"Quantity\":1,\"Items\":[\"/*\"]},\"CallerReference\":\"$(date +%s)\"}}"
             fi
