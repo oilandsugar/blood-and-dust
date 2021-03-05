@@ -20,6 +20,6 @@ draft: true
 {{% gridItem start="2" end="7" %}}
 ![](/img/frostbitten/DSC02828.png)
 {{% /gridItem %}}
-{{% gridItem start="4" end="8" fill="true" %}}
-![](/img/dark-arts/dark-arts-12.png)
+{{% gridItem start="2" end="7" %}}
+![](/img/frostbitten/logo.png)
 {{% /gridItem %}}
