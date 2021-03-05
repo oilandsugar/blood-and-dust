@@ -5,7 +5,7 @@ cover: "/img/fvneral-cover.png"
 description: ""
 shortDescription: ""
 color: 93313c
-draft: true
+draft: false
 ---
 
 {{% gridItem start="2" end="3" %}}
