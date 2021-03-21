@@ -26,4 +26,4 @@ weight = 4
 unsafe= true
 
 [params]
-newAlbumOut = true
+newAlbumOut = false
