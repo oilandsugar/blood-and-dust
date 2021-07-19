@@ -2,78 +2,80 @@
 
 <!-- Home page -->
 
-<div class="hero-img">
-  <img class="back-img" src="./img/back-rites-low-transparent.png" />
-</div>
-<section>
-  <div class="large-wrap">
-    {{ if .Site.Params.newAlbumOut }}
-    <div class="new-album align-center">
-      <a href="https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust"><img src="./img/rites-of-blood-and-dust.jpg" /></a>
-      <h2 class="announcement">New album "Rites of Blood and Dust" is out now</h2>
+<main>
+  <div class="hero-img">
+    <img class="back-img" src="./img/back-rites-low-transparent.png" />
+  </div>
+  <section>
+    <div class="large-wrap">
+      {{ if .Site.Params.newAlbumOut }}
+      <div class="new-album align-center">
+        <a href="https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust"><img src="./img/rites-of-blood-and-dust.jpg" /></a>
+        <h2 class="announcement">New album "Rites of Blood and Dust" is out now</h2>
+        <div class="separator"><img src="./img/separator.svg" /></div>
+          <a href="https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust">Get it on Bandcamp now</a>
+        <div class="separator"><img src="./img/separator.svg" /></div>
+        <small class="darker small-print">
+          100% of the profits (other than Bandcamp’s 15% cut) will be donated, on a rotating weekly basis to The Okra Project (NYC), and Taking What We Need (Montréal). The money made from our album sales will continue to be donated for the foreseeable future.
+        </small>
+      </div>
+      {{ end }}
+      {{ if not .Site.Params.newAlbumOut }}
+      {{ end }}
+      <div class="home-img">
+      </div>
+      <div class="hero-logo">
+        <img src="./img/home-img.png"/>
+        <div
+          class="hero-logo-desc align-center big-padding-bottom medium-padding-top"
+        >
+          <h2 class="italic">Ritualistic Auditory & Visual Project</h2>
+          sonic dread / queer rites
+        </div>
+      </div>
       <div class="separator"><img src="./img/separator.svg" /></div>
-        <a href="https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust">Get it on Bandcamp now</a>
+    </div>
+  </section>
+  <section class="home-bio big-padding-top big-padding-bottom">
+    <div class="wrap">
+      <div class="flex-row">
+        <div class="flex-1 align-right medium-padding-right darker">
+          Blood and Dust is a collaboration of two dark queerdos inspired by
+          horror cinema and occultism. Part horror drone, part spookfolk, part
+          post-rock, they blend synth and cello into nightmarish auditory rituals.
+        </div>
+        <div class="flex-1 medium-padding-left darker">
+          It is the music you hear while wandering a cursed manor at night,
+          calling you to the basement where dreadful things happen. Bring your
+          salt, keep your lantern lit, and stay safe while communing with the dead.
+        </div>
+      </div>
+      <div class="align-center big-padding-top">
+        <img class="crosses" src="./img/crosses.svg" />
+      </div>
+    </div>
+  </section>
+  <section class="links">
+    <div class="wrap align-center big-padding-bottom">
       <div class="separator"><img src="./img/separator.svg" /></div>
-      <small class="darker small-print">
-        100% of the profits (other than Bandcamp’s 15% cut) will be donated, on a rotating weekly basis to The Okra Project (NYC), and Taking What We Need (Montréal). The money made from our album sales will continue to be donated for the foreseeable future.
-      </small>
-    </div>
-    {{ end }}
-    {{ if not .Site.Params.newAlbumOut }}
-    {{ end }}
-    <div class="home-img">
-    </div>
-    <div class="hero-logo">
-      <img src="./img/home-img.png"/>
-      <div
-        class="hero-logo-desc align-center big-padding-bottom medium-padding-top"
+      <a href="https://blood-and-dust.bandcamp.com/">Bandcamp</a>
+      <div class="separator"><img src="./img/separator.svg" /></div>
+      <a href="https://soundcloud.com/blood-and-dust/">Soundcloud</a>
+      <div class="separator"><img src="./img/separator.svg" /></div>
+      <a href="https://blood-and-dust.bandcamp.com/merch">Merch</a>
+      <div class="separator"><img src="./img/separator.svg" /></div>
+      <a href="https://www.instagram.com/blood.and.dust/">Instagram</a>
+      <div class="separator"><img src="./img/separator.svg" /></div>
+      <a href="https://www.youtube.com/channel/UCdAPA7gDzEDL4gzJNCVygyw"
+        >YouTube</a
       >
-        <h2 class="italic">Ritualistic Auditory Project</h2>
-        sonic dread / queer rites
+      <div class="separator"><img src="./img/separator.svg" /></div>
+      <div class="align-center big-padding-top">
+        <img class="drips" src="./img/drips.svg" />
       </div>
     </div>
-    <div class="separator"><img src="./img/separator.svg" /></div>
-  </div>
-</section>
-<section class="home-bio big-padding-top big-padding-bottom">
-  <div class="wrap">
-    <div class="flex-row">
-      <div class="flex-1 align-right medium-padding-right darker">
-        Blood and Dust is a collaboration of two dark queerdos inspired by
-        horror cinema and occultism. Part horror drone, part spookfolk, part
-        post-rock, they blend synth and cello into nightmarish auditory rituals.
-      </div>
-      <div class="flex-1 medium-padding-left darker">
-        It is the music you hear while wandering a cursed manor at night,
-        calling you to the basement where dreadful things happen. Bring your
-        salt, keep your lantern lit, and stay safe while communing with the dead.
-      </div>
-    </div>
-    <div class="align-center big-padding-top">
-      <img class="crosses" src="./img/crosses.svg" />
-    </div>
-  </div>
-</section>
-<section class="links">
-  <div class="wrap align-center big-padding-bottom">
-    <div class="separator"><img src="./img/separator.svg" /></div>
-    <a href="https://blood-and-dust.bandcamp.com/">Bandcamp</a>
-    <div class="separator"><img src="./img/separator.svg" /></div>
-    <a href="https://soundcloud.com/blood-and-dust/">Soundcloud</a>
-    <div class="separator"><img src="./img/separator.svg" /></div>
-    <a href="https://blood-and-dust.bandcamp.com/merch">Merch</a>
-    <div class="separator"><img src="./img/separator.svg" /></div>
-    <a href="https://www.instagram.com/blood.and.dust/">Instagram</a>
-    <div class="separator"><img src="./img/separator.svg" /></div>
-    <a href="https://www.youtube.com/channel/UCdAPA7gDzEDL4gzJNCVygyw"
-      >YouTube</a
-    >
-    <div class="separator"><img src="./img/separator.svg" /></div>
-    <div class="align-center big-padding-top">
-      <img class="drips" src="./img/drips.svg" />
-    </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <!-- End home page -->
 

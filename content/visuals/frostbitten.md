@@ -3,7 +3,7 @@ title: Frostbitten
 date: "2021-02-23"
 cover: "/img/frostbitten-cover.png"
 description: ""
-shortDescription: ""
+shortDescription: "Wandering in the frozen city, our hearts burning, feeling everything"
 color: "577e94"
 draft: false
 ---

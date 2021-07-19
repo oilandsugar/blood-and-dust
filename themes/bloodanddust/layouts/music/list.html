@@ -1,0 +1,18 @@
+{{ partial "header" . }}
+{{ partial "navbar" . }}
+{{ partial "mobilemenu" . }}
+
+<!-- Main -->
+<main>
+  <div id="main" class="big-padding-top big-padding-bottom">
+    <section class="big-padding-top big-padding-bottom">
+        <div class="projects-grid">
+          {{ range where .Pages "Type" "music" }}
+            {{ partial "musicproject.html" . }}
+          {{ end }}
+        </div>
+    </section>
+  </div>
+</main>
+
+{{ partial "footer" . }}

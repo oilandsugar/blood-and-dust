@@ -3,14 +3,16 @@
 {{ partial "mobilemenu" . }}
 
 <!-- Main -->
-<div id="main">
-  <section class="content big-padding-top big-padding-bottom">
-    <div class="wrap big-padding-top big-padding-bottom">
-        {{ .Render "header" }}
-        <div id="content" class="politics">
-            {{ .Content }}
-        </div>
-    </div>
-  </section>
-</div>
+<main>
+  <div id="main">
+    <section class="content big-padding-top big-padding-bottom">
+      <div class="wrap big-padding-top big-padding-bottom">
+          {{ .Render "header" }}
+          <div id="content" class="politics">
+              {{ .Content }}
+          </div>
+      </div>
+    </section>
+  </div>
+</main>
 {{ partial "footer" . }}

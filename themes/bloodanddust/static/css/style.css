@@ -681,6 +681,24 @@ a:hover {
   }
 }
 
+/* --- Music --- */
+
+.project.music {
+  margin: 8px; /* spacing_xs */
+  overflow: hidden;
+  height: auto;
+  width:calc(33.3333% - 16px);
+  position: relative;
+}
+
+.project.music .cover {
+  line-height: 0;
+  transition: 0.5s;
+  border-radius: 4px;
+  background-color: #798465;
+  overflow: hidden;
+}
+
 /* --- Politics --- */
 
 .politics {
@@ -802,7 +820,8 @@ a:hover {
     padding: 0 16px; /* spacing_sm */;
     flex-direction:column;
   }
-  .projects-grid .project.visual {
+  .projects-grid .project.visual,
+  .projects-grid .project.music {
     height:auto;
     width:calc(100% - 24px);
   }
@@ -810,7 +829,8 @@ a:hover {
     font-size: 35px;
     margin-top:-30px;
   }
-  .project.visual {
+  .project.visual,
+  .project.music {
     margin-bottom: 24px; /* spacing_md */
     height: 150px;
     width:auto;

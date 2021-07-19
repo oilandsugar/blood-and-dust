@@ -6,7 +6,7 @@ theme = "bloodanddust"
 
 [[menu.main]]
 name = "Music"
-url = "https://blood-and-dust.bandcamp.com/"
+url = "/music/"
 weight = 1
 [[menu.main]]
 name = "Visuals"
