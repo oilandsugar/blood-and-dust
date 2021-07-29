@@ -1,14 +1,13 @@
 ---
-title: Keening cello
+title: Weirdos
 date: "2021-07-19"
-cover: "/img/keening-cello/DSC03288.png"
+cover: "/img/weirdos/DSC03059.jpg"
 description: ""
 shortDescription: ""
-color: "7c6b63"
+color: "59aa7f"
 draft: false
 ---
 
-
 {{% gridItem start="2" end="7" %}}
-![](/img/keening-cello/DSC03288.png)
+![](/img/weirdos/DSC03059.jpg)
 {{% /gridItem %}}
