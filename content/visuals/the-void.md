@@ -2,6 +2,8 @@
 title: The Void, Transmuted
 date: "2020-01-29"
 cover: "/img/body-horror-cover.png"
+song: "/music/the-void-transmuted.mp3"
+songlink: "https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust"
 description: "Enshrouded, wrapped in layers that bend light and obscure form, there
   is something waiting to to emerge. Incubation, transmutation. It begins as a pulsing
   red heart, bleeding into open hands. Soon, skin stretches across a vertebra, recoiling

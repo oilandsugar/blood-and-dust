@@ -9,6 +9,21 @@
         <div class="visual-grid" style="color:#{{ .Params.color }}">
           <header>
             <h1 class="title">{{ .Title }}</h1>
+            {{ if .Params.song }}
+            <div class="audio-player" style="border-color:#{{ .Params.secondaryColor }}">
+              <button id="play-pause-button" class="play" title="Play companion song" aria-label="Play companion song">Play</button>
+              <div class="bar-container">
+                <div id="progress-bar"></div>
+              </div>
+              <audio id="audio-player">
+                <source src="{{ .Params.song }}" type="audio/mpeg">
+                <div class="audio-warning">Your browser does not support the audio element.</div>
+              </audio>
+            </div>
+            {{ end }}
+            {{ with .Params.songlink }}
+              <div class="song-link"><a href="{{ . }}" target="_blank" aria-label="Link to the song (opens in a new window)" title="Link to the song (opens in a new window)">Link to the song</a></div>
+            {{ end }}
             <p class="description darker" style="color:#{{ .Params.secondaryColor }}">{{ .Description }}</p>
           </header>
           {{ .Content }}

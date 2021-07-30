@@ -1,11 +1,11 @@
 ---
-title: Deep in the Dark wood
-date: "2021-07-19"
+title: Deep in the Dark Woods
+date: "2021-07-30"
 cover: "/img/darkwood/DSC03582.jpg"
 description: ""
 shortDescription: ""
-color: "234545"
-draft: false
+color: 234545
+secondaryColor: 234545
 ---
 
 {{% gridItem start="2" end="7" %}}
