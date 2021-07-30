@@ -1,5 +1,8 @@
 <div class="project music">
-  <a href="{{ with .Params.link }}{{ . }}{{ end }}" target="_blank">
+  <a
+    title="Link to the {{ .Title }} single (opens in new tab)"
+    aria-label="Link to the {{ .Title }} single (opens in new tab)"
+    href="{{ with .Params.link }}{{ . }}{{ end }}" target="_blank">
     <div class="cover">
       <img src="{{ with .Params.cover }}{{ . }}{{ end }}"/>
     </div>

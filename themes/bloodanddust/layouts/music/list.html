@@ -5,12 +5,21 @@
 <!-- Main -->
 <main>
   <div id="main" class="big-padding-top big-padding-bottom">
+    <h1 class="align-center">Albums</h1>
     <section class="big-padding-top big-padding-bottom">
-        <div class="projects-grid">
-          {{ range where .Pages "Type" "music" }}
+      {{ range where .Pages "Type" "music" }}
+        {{ if .Params.album }}
+          {{ partial "albumproject.html" . }}
+        {{ end }}
+      {{ end }}
+      <h1 class="align-center">Singles</h1>
+      <div class="projects-grid">
+        {{ range where .Pages "Type" "music" }}
+          {{ if not .Params.album }}
             {{ partial "musicproject.html" . }}
-          {{ end }}
-        </div>
+          {{ end}}
+        {{ end }}
+      </div>
     </section>
   </div>
 </main>
