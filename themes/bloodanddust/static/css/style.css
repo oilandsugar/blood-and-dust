@@ -81,13 +81,13 @@ img {
 .wrap {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 24px; /* spacing_md */
+  padding: 0 32px; /* spacing_lg */
 }
 
 .large-wrap {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px; /* spacing_md */
+  padding: 0 32px; /* spacing_lg */
 }
 
 .hidden {
@@ -463,6 +463,11 @@ a:hover {
   margin: 48px auto 0 auto;
 }
 
+.home .new-album {
+  max-width:450px;
+  margin: 0 auto 0 auto;
+}
+
 .new-album .announcement {
   text-align:center;
   line-height:1.2em;
@@ -743,6 +748,11 @@ a:hover {
 
 /* --- Music --- */
 
+.music-page h1 {
+  font-family: "IM Fell DW Pica", serif;
+  font-size: 24px;
+}
+
 .project.music {
   margin: 8px; /* spacing_xs */
   overflow: hidden;
@@ -825,6 +835,10 @@ a:hover {
 }
 
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size:30px;
+    line-height:27px;
+  }
   .desktop {
     display: none;
   }
@@ -877,13 +891,8 @@ a:hover {
     line-height: 24px; /* base_line_height */
   }
   .projects-grid {
-    padding: 0 16px; /* spacing_sm */;
+    padding: 0 32px; /* spacing_lg */;
     flex-direction:column;
-  }
-  .projects-grid .project.visual,
-  .projects-grid .project.music {
-    height:auto;
-    width:calc(100% - 24px);
   }
   .projects-grid .project.visual h1 {
     font-size: 35px;
@@ -891,9 +900,12 @@ a:hover {
   }
   .project.visual,
   .project.music {
+    height:auto;
     margin-bottom: 24px; /* spacing_md */
-    height: 150px;
-    width:auto;
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+    margin-top:0;
   }
   .project.visual h2 {
     opacity: 1;
@@ -901,5 +913,9 @@ a:hover {
   }
   .grid-item {
     margin-bottom: 16px; /* spacing_sm */;
+  }
+  .new-album {
+    padding-left: 32px; /* spacing_lg */;
+    padding-right: 32px; /* spacing_lg */;
   }
 }
