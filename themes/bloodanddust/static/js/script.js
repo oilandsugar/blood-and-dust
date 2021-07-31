@@ -55,8 +55,9 @@ jQuery(function($) {
       progressBar.style.width = parseFloat(((audioPlayer.currentTime / audioPlayer.duration) * 100)) + "%";
     }
 
-    playPause.addEventListener("click", togglePlayPause)
-    audioPlayer.addEventListener('timeupdate', showProgress);
-
+    if(playPause && audioPlayer) {
+      playPause.addEventListener("click", togglePlayPause)
+      audioPlayer.addEventListener('timeupdate', showProgress);
+    }
   });
 });
