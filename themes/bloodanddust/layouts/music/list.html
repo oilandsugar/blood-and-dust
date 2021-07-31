@@ -1,10 +1,8 @@
 {{ partial "header" . }}
 {{ partial "navbar" . }}
-{{ partial "mobilemenu" . }}
 
 <!-- Main -->
-<main>
-  <div id="main" class="music-page big-padding-top big-padding-bottom">
+  <main id="main" class="music-page big-padding-top big-padding-bottom">
     <h1 class="align-center">Albums</h1>
     <section class="big-padding-bottom">
       {{ range where .Pages "Type" "music" }}
@@ -21,7 +19,6 @@
         {{ end }}
       </div>
     </section>
-  </div>
 </main>
 
 {{ partial "footer" . }}

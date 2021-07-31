@@ -244,8 +244,16 @@ img {
   border:0;
   display:inline-block;
   cursor:pointer;
-  width:60px;
+  width:70px;
   box-sizing:border-box;
+}
+
+#play-pause-button svg {
+  display:inline-block;
+  width: 13px;
+  height: 20px;
+  vertical-align:top;
+  margin-right:8px; /* spacing_xs */
 }
 
 .audio-player .bar-container {
@@ -399,15 +407,6 @@ a:hover {
   float: right;
 }
 
-.mobile-menu {
-  padding-bottom: 16px; /* spacing_sm */
-}
-
-.mobile-menu .logo {
-  margin: 19px 0 0 24px; /* spacing_md */
-  max-width: 120px;
-}
-
 .menu-button {
   width: 30px;
   position: absolute;
@@ -503,7 +502,7 @@ a:hover {
 
 .hero-logo {
   text-align: center;
-  /*max-width: 400px;*/
+  max-width: 1000px;
   margin: 0 auto 0 auto;
 }
 
@@ -844,6 +843,29 @@ a:hover {
   }
   .mobile {
     display: block !important;
+  }
+  .main-nav .logo {
+    display:block;
+    text-align:center;
+  }
+  .menu {
+    text-align:center;
+    width:100%;
+  }
+  .menu .dot {
+    display:none;
+  }
+  .menu-item {
+    padding-right: 16px; /* spacing_sm */;
+    width:auto;
+    font-size:16px;
+  }
+  .menu-item h2 {
+    font-size:20px;
+    line-height:26px;
+  }
+  .symbols {
+    display:none;
   }
   .home-spacer {
     height:420px;

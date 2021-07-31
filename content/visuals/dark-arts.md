@@ -8,7 +8,7 @@ description:
 shortDescription:
   "Look through the flame, and tell us what you see. Clench your ash-stained
   claws—gaunt from centuries beyond your reckoning—to hold the vision in place."
-song: "/music/interlude.mp3"
+song: "/music/dead-tongues.mp3"
 songlink: "https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust"
 ---
 

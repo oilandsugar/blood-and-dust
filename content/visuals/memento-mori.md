@@ -6,6 +6,8 @@ description: 'Remember that you will die. Remember that life is a gift; but it i
 shortDescription: 'Remember that you will die. Remember that life is a gift; but it is not ours to keep forever. Flesh wrapped in bone will one day unravel, and worms will occupy the soft hollows before all turns to dust.'
 color: "7d5d54"
 secondaryColor: "3b3432"
+song: "/music/interlude.mp3"
+songlink: "https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust"
 
 ---
 {{% gridItem start="2" end="7" %}}

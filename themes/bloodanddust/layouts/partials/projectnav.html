@@ -1,5 +1,5 @@
 <div class="project-nav">
-  <div class="slider">
+  <div class="slider" id="slider">
     {{ range where $.Site.RegularPages "Type" "visuals" }}
       {{ partial "visualproject.html" . }}
     {{ end }}
