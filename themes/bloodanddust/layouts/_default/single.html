@@ -1,9 +1,8 @@
 {{ partial "header" . }}
 {{ partial "navbar" . }}
-{{ partial "mobilemenu" . }}
 
 <!-- Main -->
-<div id="main">
+<main id="main">
   <section class="content big-padding-top big-padding-bottom">
     <div class="wrap big-padding-top big-padding-bottom">
         {{ $.Scratch.Set "h1" true }}
@@ -13,5 +12,6 @@
         </div>
     </div>
   </section>
-</div>
+</main>
+
 {{ partial "footer" . }}

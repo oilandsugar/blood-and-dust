@@ -5,7 +5,7 @@ type: single
 
 <div class="flag"><img src="/img/flag.svg"/></div>
 
-We make horror music in a world full of horrors.
+# We make horror music in a world full of horrors
 
 Overt horrors. The blood on the ground.
 Insidious horrors, which can go unnoticed if you don't look closely enough, or if you're not experiencing it firsthand.

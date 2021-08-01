@@ -2,6 +2,8 @@
 title: Vampyr
 date: "2019-12-11"
 cover: "/img/vampyr-cover.png"
+song: "/music/from-blood-to-dust.mp3"
+songlink: "https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust"
 description: 'Oh wretched, delicate creature, how long have you lived in your castle
   made of stone? Your skin is bloodless, your claws are long. You are married to darkness,
   but you have never forgotten the sun. Where is your family? The bones are your friends

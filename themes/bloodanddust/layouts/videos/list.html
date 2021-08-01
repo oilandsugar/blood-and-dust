@@ -1,0 +1,16 @@
+{{ partial "header" . }}
+{{ partial "navbar" . }}
+
+<!-- Main -->
+  <main id="main" class="videos-page big-padding-top big-padding-bottom">
+    <h1 class="align-center">Videos</h1>
+    <section class="big-padding-bottom">
+      <div class="projects-grid">
+        {{ range .Pages }}
+          {{ partial "videoproject.html" . }}
+        {{ end }}
+      </div>
+    </section>
+</main>
+
+{{ partial "footer" . }}

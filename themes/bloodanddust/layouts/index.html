@@ -1,8 +1,9 @@
-{{ partial "header" . }} {{ partial "navbar" . }} {{ partial "mobilemenu" . }}
+{{ partial "header" . }}
+{{ partial "navbar" . }}
 
 <!-- Home page -->
 
-<main>
+<main class="home">
   <div class="hero-img">
     <img class="back-img" src="./img/back-rites-low-transparent.png" />
   </div>
@@ -10,10 +11,16 @@
     <div class="large-wrap">
       {{ if .Site.Params.newAlbumOut }}
       <div class="new-album align-center">
-        <a href="https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust"><img src="./img/rites-of-blood-and-dust.jpg" /></a>
+        <a
+          title="Link to the new {{ .Title }} album (opens in new tab)"
+          aria-label="Link to the new {{ .Title }} album (opens in new tab)"
+          href="https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust"><img src="./img/rites-of-blood-and-dust.jpg" /></a>
         <h2 class="announcement">New album "Rites of Blood and Dust" is out now</h2>
         <div class="separator"><img src="./img/separator.svg" /></div>
-          <a href="https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust">Get it on Bandcamp now</a>
+          <a
+            title="Link to the new {{ .Title }} album (opens in new tab)"
+            aria-label="Link to the new {{ .Title }} album (opens in new tab)"
+            href="https://blood-and-dust.bandcamp.com/album/rites-of-blood-and-dust">Get it on Bandcamp now</a>
         <div class="separator"><img src="./img/separator.svg" /></div>
         <small class="darker small-print">
           100% of the profits (other than Bandcamp’s 15% cut) will be donated, on a rotating weekly basis to The Okra Project (NYC), and Taking What We Need (Montréal). The money made from our album sales will continue to be donated for the foreseeable future.
@@ -29,7 +36,7 @@
         <div
           class="hero-logo-desc align-center big-padding-bottom medium-padding-top"
         >
-          <h2 class="italic">Ritualistic Auditory & Visual Project</h2>
+          <h1>Ritualistic Auditory & Visual Project</h1>
           sonic dread / queer rites
         </div>
       </div>

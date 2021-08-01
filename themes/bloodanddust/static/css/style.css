@@ -81,13 +81,13 @@ img {
 .wrap {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 24px; /* spacing_md */
+  padding: 0 32px; /* spacing_lg */
 }
 
 .large-wrap {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px; /* spacing_md */
+  padding: 0 32px; /* spacing_lg */
 }
 
 .hidden {
@@ -218,6 +218,63 @@ img {
 }
 
 /* --------------------------------
+//////////// AUDIO PLAYER /////////
+---------------------------------*/
+
+.audio-player {
+  margin-bottom: 8px; /* spacing_xs */
+  border-bottom: 2px solid;
+  padding-top: 8px; /* spacing_xs */
+  padding-bottom: 8px; /* spacing_xs */
+  line-height: 0;
+  position: relative;
+  text-align: left;
+}
+
+.song-link {
+  margin-bottom: 24px; /* spacing_md */
+}
+
+#play-pause-button {
+  color: inherit;
+  background: none;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 18px;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+  width: 70px;
+  box-sizing: border-box;
+}
+
+#play-pause-button svg {
+  display: inline-block;
+  width: 13px;
+  height: 20px;
+  vertical-align: top;
+  margin-right: 8px; /* spacing_xs */
+}
+
+.audio-player .bar-container {
+  height: 6px;
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 64px);
+}
+
+.audio-player #progress-bar {
+  height: 6px;
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 0;
+  border-bottom: 6px solid;
+  color: inherit;
+  transition: 0.3s;
+}
+
+/* --------------------------------
 //////////// TYPOGRAPHY ///////////
 ---------------------------------*/
 
@@ -225,7 +282,7 @@ h1 {
   font-family: "Mandrita Display SSi";
   text-transform: uppercase;
   font-size: 40px; /* extra_large_font_size */
-  line-height: 64px; /* extra_large_line_height */
+  line-height: 37px; /* extra_large_line_height */
 }
 
 h2 {
@@ -251,7 +308,7 @@ p {
 }
 
 small {
-  font-size:12px;
+  font-size: 12px;
 }
 
 strong,
@@ -350,15 +407,6 @@ a:hover {
   float: right;
 }
 
-.mobile-menu {
-  padding-bottom: 16px; /* spacing_sm */
-}
-
-.mobile-menu .logo {
-  margin: 19px 0 0 24px; /* spacing_md */
-  max-width: 120px;
-}
-
 .menu-button {
   width: 30px;
   position: absolute;
@@ -410,22 +458,27 @@ a:hover {
 }
 
 .new-album {
-  max-width:450px;
+  max-width: 450px;
   margin: 48px auto 0 auto;
 }
 
+.home .new-album {
+  max-width: 450px;
+  margin: 0 auto 0 auto;
+}
+
 .new-album .announcement {
-  text-align:center;
-  line-height:1.2em;
-  margin-top:24px; /* spacing_md */
-  margin-bottom:24px; /* spacing_md */
+  text-align: center;
+  line-height: 1.2em;
+  margin-top: 24px; /* spacing_md */
+  margin-bottom: 24px; /* spacing_md */
 }
 
 .new-album .small-print {
-  margin-top:24px; /* spacing_md */
-  margin-bottom:48px;
-  display:block;
-  line-height:16px;
+  margin-top: 24px; /* spacing_md */
+  margin-bottom: 48px;
+  display: block;
+  line-height: 16px;
 }
 
 .hero-img .back-img {
@@ -437,18 +490,24 @@ a:hover {
   font-style: italic;
 }
 
+.hero-logo-desc h1 {
+  font-style: italic;
+  font-size: 24px;
+  font-family: "IM Fell DW Pica", serif;
+}
+
 .hero-logo-desc p {
   font-size: 28px;
 }
 
 .hero-logo {
   text-align: center;
-  /*max-width: 400px;*/
+  max-width: 1000px;
   margin: 0 auto 0 auto;
 }
 
 .home-spacer {
-  height:400px;
+  height: 400px;
 }
 
 .hero-logo img {
@@ -471,19 +530,19 @@ a:hover {
 /* --- visuals --- */
 
 .projects-grid {
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .projects-grid .project.visual h2 {
-  opacity:0;
+  opacity: 0;
 }
 
 .projects-grid .project.visual:hover h2 {
-  opacity:0;
+  opacity: 0;
 }
 
 .slider {
@@ -521,13 +580,13 @@ a:hover {
   margin: 8px; /* spacing_xs */
   overflow: hidden;
   height: auto;
-  width:calc(33.3333% - 16px);
+  width: calc(33.3333% - 16px);
   position: relative;
 }
 
 .project.visual .cover {
   line-height: 0;
-  height:300px;
+  height: 300px;
   transition: 0.5s;
   border-radius: 4px;
   background-color: #798465;
@@ -541,14 +600,13 @@ a:hover {
 }
 
 .project.visual .cover-inside {
-
 }
 
 .project.visual .description {
-  text-align:center;
+  text-align: center;
   padding: 24px; /* spacing_md */
-  position:relative;
-  z-index:10;
+  position: relative;
+  z-index: 10;
 }
 
 .project.visual .description span {
@@ -558,10 +616,10 @@ a:hover {
 .project.visual .description h1 {
   line-height: 0.9em;
   margin-bottom: 16px; /* spacing_sm */
-  margin-top:-40px;
-  transition:0.5s;
+  margin-top: -40px;
+  transition: 0.5s;
   word-break: break-word;
-  font-size:35px;
+  font-size: 35px;
 }
 
 .project.visual h2 {
@@ -580,12 +638,12 @@ a:hover {
 }
 
 .project.visual:hover a .description {
-  font-style:normal;
+  font-style: normal;
   color: #a3bf93; /* textColor */
 }
 
 .project.visual:hover h1 {
-  color:#922d2d; /* accentColor */
+  color: #922d2d; /* accentColor */
 }
 
 .project.visual:hover .cover {
@@ -629,6 +687,11 @@ a:hover {
   word-break: break-word;
 }
 
+.visual-grid a {
+  color: inherit;
+  font-size: 24px;
+}
+
 .visual-grid header .description {
   font-size: 24px; /* large_font_size */
   line-height: 32px; /* medium_line_height */
@@ -663,7 +726,7 @@ a:hover {
 }
 
 .project-nav .project.visual .cover {
-  height:150px;
+  height: 150px;
 }
 
 .project-nav .project.visual h2 {
@@ -672,7 +735,7 @@ a:hover {
 }
 
 .project-nav .project.visual .description {
-  display:none;
+  display: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -683,11 +746,16 @@ a:hover {
 
 /* --- Music --- */
 
+.music-page h1 {
+  font-family: "IM Fell DW Pica", serif;
+  font-size: 24px;
+}
+
 .project.music {
   margin: 8px; /* spacing_xs */
   overflow: hidden;
   height: auto;
-  width:calc(33.3333% - 16px);
+  width: calc(33.3333% - 16px);
   position: relative;
 }
 
@@ -697,6 +765,26 @@ a:hover {
   border-radius: 4px;
   background-color: #798465;
   overflow: hidden;
+}
+
+/* --- Videos --- */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* --- Politics --- */
@@ -760,19 +848,46 @@ a:hover {
   }
 
   .project.visual {
-    width:calc(50% - 24px);
+    width: calc(50% - 24px);
   }
 }
 
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+    line-height: 27px;
+  }
   .desktop {
     display: none;
   }
   .mobile {
     display: block !important;
   }
+  .main-nav .logo {
+    display: block;
+    text-align: center;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+  }
+  .menu .dot {
+    display: none;
+  }
+  .menu-item {
+    padding-right: 16px; /* spacing_sm */
+    width: auto;
+    font-size: 16px;
+  }
+  .menu-item h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .symbols {
+    display: none;
+  }
   .home-spacer {
-    height:420px;
+    height: 420px;
   }
   .hero-logo img {
     width: 100%;
@@ -817,29 +932,31 @@ a:hover {
     line-height: 24px; /* base_line_height */
   }
   .projects-grid {
-    padding: 0 16px; /* spacing_sm */;
-    flex-direction:column;
-  }
-  .projects-grid .project.visual,
-  .projects-grid .project.music {
-    height:auto;
-    width:calc(100% - 24px);
+    padding: 0 32px; /* spacing_lg */
+    flex-direction: column;
   }
   .projects-grid .project.visual h1 {
     font-size: 35px;
-    margin-top:-30px;
+    margin-top: -30px;
   }
   .project.visual,
   .project.music {
+    height: auto;
     margin-bottom: 24px; /* spacing_md */
-    height: 150px;
-    width:auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
   }
   .project.visual h2 {
     opacity: 1;
     line-height: 150px;
   }
   .grid-item {
-    margin-bottom: 16px; /* spacing_sm */;
+    margin-bottom: 16px; /* spacing_sm */
+  }
+  .new-album {
+    padding-left: 32px; /* spacing_lg */
+    padding-right: 32px; /* spacing_lg */
   }
 }

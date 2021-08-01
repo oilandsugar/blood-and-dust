@@ -15,11 +15,11 @@ weight = 2
 [[menu.main]]
 name = "Politics"
 url = "/politics/"
-weight = 3
+weight = 4
 [[menu.main]]
 name = "Merch"
 url = "https://blood-and-dust.bandcamp.com/merch/"
-weight = 4
+weight = 5
 
 
 [markup.goldmark.renderer]

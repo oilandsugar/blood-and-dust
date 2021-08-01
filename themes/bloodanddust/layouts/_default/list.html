@@ -1,17 +1,14 @@
 {{ partial "header" . }}
 {{ partial "navbar" . }}
-{{ partial "mobilemenu" . }}
 
 <!-- Main -->
-<main>
-  <div id="main" class="big-padding-top big-padding-bottom">
+  <main id="main" class="big-padding-top big-padding-bottom">
     <section class="big-padding-top big-padding-bottom">
       <div class="wrap">
         <h1 class="medium-margin-bottom blue">{{ .Params.title }}</h1>
         {{ .Content }}
       </div>
     </section>
-  </div>
 </main>
 
 {{ partial "footer" . }}

@@ -1,20 +1,58 @@
-{{ partial "header" . }} {{ partial "navbar" . }} {{ partial "mobilemenu" . }}
+{{ partial "header" . }}
+{{ partial "navbar" . }}
 
 <!-- Main -->
-<main>
-  <div id="main">
+
+  <main id="main">
     {{ partial "projectnav" . }}
     <section class="content big-padding-top big-padding-bottom">
       <div class="big-wrap">
         <div class="visual-grid" style="color:#{{ .Params.color }}">
           <header>
             <h1 class="title">{{ .Title }}</h1>
+            {{ if .Params.song }}
+            <div class="audio-player" style="border-color:#{{ .Params.secondaryColor }}">
+              <button id="play-pause-button" class="play" title="Play companion song" aria-label="Play companion song">
+                <svg
+                   version="1.1"
+                   id="svg9"
+                   xml:space="preserve"
+                   width="40"
+                   height="50"
+                   viewBox="0 0 40 50"
+                   xmlns="http://www.w3.org/2000/svg"
+                   xmlns:svg="http://www.w3.org/2000/svg"><defs
+                     id="defs13"><rect
+                       x="221.46648"
+                       y="147.64432"
+                       width="119.73594"
+                       height="43.212971"
+                       id="rect6681" /></defs><g
+                     id="g15"
+                     transform="matrix(1.3333333,0,0,-1.3333333,0,1056)"><path
+                       style="fill:#{{ .Params.color }};fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                       d="m 0.51654808,782.7281 c 0,0 0.43971,-23.99427 0.43971,-25.23599 0,-1.24172 2.12867002,-2.30605 3.90255002,-0.70955 1.77389,1.59649 9.6071499,6.05937 9.6071499,6.05937 0,0 2.90253,1.96082 3.96686,2.84776 1.06433,0.88694 1.40404,2.69853 2.64577,3.0533 1.24172,0.35478 2.15126,-0.43216 3.39299,0.27739 1.24172,0.70955 1.85128,1.60404 3.27038,2.66837 1.41912,1.06433 2.56838,3.11562 -0.0924,4.71212 -2.66083,1.59649 -10.10393,5.62137 -12.78354,7.5468 -4.78118,3.43551 -9.3093499,5.49907 -10.7694799,6.47645 -2.09818,1.40449 -3.32521002,-0.23216 -3.32521002,-2.00604 z"
+                       id="path1432" /></g></svg>
+                Play
+              </button>
+              <div class="bar-container">
+                <div id="progress-bar"></div>
+              </div>
+              <audio id="audio-player">
+                <source src="{{ .Params.song }}" type="audio/mpeg">
+                <div class="audio-warning">Your browser does not support the audio element.</div>
+              </audio>
+            </div>
+            {{ end }}
+            {{ with .Params.songlink }}
+              <div class="song-link"><a href="{{ . }}" target="_blank" aria-label="Link to the song (opens in a new window)" title="Link to the song (opens in a new window)">Listen on soundcloud</a></div>
+            {{ end }}
             <p class="description darker" style="color:#{{ .Params.secondaryColor }}">{{ .Description }}</p>
           </header>
           {{ .Content }}
         </div>
       </div>
     </section>
-  </div>
 </main>
+
 {{ partial "footer" . }}

@@ -1,5 +1,8 @@
 jQuery(function($) {
   $(document).ready(function() {
+
+    // SLIDER
+
     $('.slider').slick({
       infinite: true,
       slidesToShow: 5,
@@ -31,20 +34,30 @@ jQuery(function($) {
       ]
     });
 
-    // mobile menu {
-    $('.menu-button').click(function() {
-      $('.menu-content').addClass('visible');
-      $('.menu-content').removeClass('hidden');
-    });
+    // audio player
+    let audioPlayer = document.getElementById('audio-player');
+    let playPause = document.getElementById('play-pause-button');
+    let progressBar = document.getElementById('progress-bar');
 
-    $('.menu-content').find('.close').click(function() {
-      $('.menu-content').removeClass('visible');
-      $('.menu-content').addClass('hidden');
-    });
+    const togglePlayPause = () => {
+      if(playPause.classList.contains("play")) {
+        playPause.classList.toggle("play");
+        playPause.innerHTML = "Pause"
+        audioPlayer.play()
+      } else {
+        playPause.classList.toggle("play");
+        audioPlayer.pause();
+        playPause.innerHTML = "Play"
+      }
+    }
 
-    $('.menu-content').find('a').click(function() {
-      $('.menu-content').removeClass('visible');
-      $('.menu-content').addClass('hidden');
-    });
+    const showProgress = () => {
+      progressBar.style.width = parseFloat(((audioPlayer.currentTime / audioPlayer.duration) * 100)) + "%";
+    }
+
+    if(playPause && audioPlayer) {
+      playPause.addEventListener("click", togglePlayPause)
+      audioPlayer.addEventListener('timeupdate', showProgress);
+    }
   });
 });
