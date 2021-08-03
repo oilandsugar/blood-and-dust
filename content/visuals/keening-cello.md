@@ -8,7 +8,7 @@ description: ""
 shortDescription: ""
 color: "7c6b63"
 secondaryColor: ""
-draft: true
+draft: false
 ---
 
 {{% gridItem start="2" end="7" %}}

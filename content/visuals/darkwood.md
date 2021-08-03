@@ -2,11 +2,11 @@
 title: Deep in the Dark Woods
 date: "2021-07-30"
 cover: "/img/darkwood/DSC03582.jpg"
-description: ""
-shortDescription: ""
+description: "You look tired. I don’t suppose you’ve heard it, have you? The voice? Calling you through the trees, calling you to come and rest? That sweet voice—it has a way of getting into your head. But it wants to devour you, you know. The whole forest wants to devour you. It’s devouring you from the inside, right now. You’re no different than the screaming shadows you see outside at night. You’re all heading the same way, straight into its jaws. Me? I’m hungry—can’t you tell?"
+shortDescription: "You look tired. I don’t suppose you’ve heard it, have you? The voice? Calling you through the trees, calling you to come and rest? That sweet voice—it has a way of getting into your head. But it wants to devour you, you know. The whole forest wants to devour you."
 color: 234545
 secondaryColor: 234545
-draft: true
+draft: false
 ---
 
 {{% gridItem start="1" end="8" %}}

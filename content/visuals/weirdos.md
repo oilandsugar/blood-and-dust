@@ -5,7 +5,7 @@ cover: "/img/weirdos/DSC03059.jpg"
 description: ""
 shortDescription: ""
 color: "59aa7f"
-draft: true
+draft: false
 ---
 
 {{% gridItem start="2" end="7" %}}
