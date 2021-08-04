@@ -2,21 +2,25 @@
 <nav class="main-nav">
   <div class="big-wrap">
     <div class="logo">
-      <a href="/"><img src="/img/logo-long.svg"/></a>
+      <h1>
+        <a href="/" title="Home page" aria-label="Home page">
+          <img src="/img/logo-long.svg" alt="Blood and Dust"/>
+        </a>
+      </h1>
     </div>
     <div class="menu">
       {{ $currentPage := . }} {{ range .Site.Menus.main }}
       {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
       {{ $active = or $active (eq .Name $current.Title) }}
       {{ $active = or $active (and (eq .Name "Visuals") (eq $current.Section "visuals")) }}
-        <span class="dot"><img src="/img/dot.svg"/></span>
+        <span class="dot"><img src="/img/dot.svg" alt=""/></span>
         <a class="menu-item {{ if $active }}active{{ end }}" href="{{ .URL | absLangURL }}">
           <h2>{{ .Name }}</h2>
         </a>
       {{ end }}
     </div>
     <div class="symbols">
-      <img src="/img/symbols.svg"/>
+      <img src="/img/symbols.svg" alt="Our own occult symbols, representing blood and dust"/>
     </div>
   </div>
 </nav>

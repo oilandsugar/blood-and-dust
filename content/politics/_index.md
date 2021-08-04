@@ -3,7 +3,7 @@ title: Politics
 type: single
 ---
 
-<div class="flag"><img src="/img/flag.svg"/></div>
+<div class="flag"><img src="/img/flag.svg" alt="Black flag"/></div>
 
 # We make horror music in a world full of horrors
 
@@ -20,4 +20,4 @@ We strive to use our platform to offer connection, solidarity, and support with 
 
 And we remember that this city, Tiohtià:ke, is the traditional and unceded territory of the Kanien'keha:ka (Mohawk) people, a place which has long served as a site of meeting and exchange amongst nations.
 
-<div class="separator"><img src="/img/separator-red.svg" /></div>
+<div class="separator"><img src="/img/separator-red.svg" alt="" /></div>
