@@ -3,7 +3,7 @@ title: The Blood of Pomegranates
 date: "2020-11-23"
 cover: "/img/pomegranates-cover.jpg"
 description: "A stab in the heart. The sacred and the rotting. A heart haunted by the ghosts of dysphoria and trauma."
-shortDescription: "A stab in the heart. The sacred and the rotting. A heart haunted by the ghosts of dysphoria and trauma."
+shortDescription: "A stab in the heart. The sacred and the rotting."
 color: 792437
 secondaryColor: 3e6465
 ---

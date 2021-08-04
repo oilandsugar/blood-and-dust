@@ -9,6 +9,10 @@ secondaryColor: 234545
 draft: false
 ---
 
+{{% gridItem start="3" end="6" text="true" centered="true" %}}
+Inspired by the art and music of [Darkwood](https://arthurkordas.bandcamp.com/album/darkwood-original-video-game-soundtrack).
+{{% /gridItem %}}
+
 {{% gridItem start="1" end="8" %}}
 ![](/img/darkwood/DSC03541.jpg)
 {{% /gridItem %}}

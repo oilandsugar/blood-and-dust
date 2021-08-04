@@ -3,7 +3,7 @@ title: Memento Mori
 date: "2020-05-04"
 cover: "/img/memento-mori-cover.png"
 description: 'Remember that you will die. Remember that life is a gift; but it is not ours to keep forever. Flesh wrapped in bone will one day unravel, and worms will occupy the soft hollows before all turns to dust. So dance as long as you can. Create as much as your tired muscles allow. Rest now in peace knowing one day this rest will last forever. Build monuments to death. To your death. To the death of everything you know. Because only then can you remember that death is our constant companion, and we carry each other. Only then can you remember to give back to what has been endowed to you. Only then can you make room for something new.'
-shortDescription: 'Remember that you will die. Remember that life is a gift; but it is not ours to keep forever. Flesh wrapped in bone will one day unravel, and worms will occupy the soft hollows before all turns to dust.'
+shortDescription: 'Remember that you will die. Remember that life is a gift; but it is not ours to keep forever.'
 color: "7d5d54"
 secondaryColor: "3b3432"
 song: "/music/interlude.mp3"

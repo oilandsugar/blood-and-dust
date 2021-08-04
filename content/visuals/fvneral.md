@@ -5,7 +5,7 @@ cover: "/img/fvneral-cover.png"
 song: "/music/all-our-hands-to-bury-you-deep.mp3"
 songlink: "https://soundcloud.com/blood-and-dust/all-our-hands-to-bury-you-deep"
 description: "Draw the curtains, cover the mirrors, turn the picture frames, don the black ribbons. You are dead, but we are not mourning. We carried you, headless, down the streets. How we wished that angled blade would sever the legacy of your harm the way it severed your spine. How we wished your stain would wash away like your blood in the rain. How we wish your corpse will fester so that something can grow from it. So with all our hands we bury you deep."
-shortDescription: "Draw the curtains, cover the mirrors, turn the picture frames, don the black ribbons. You are dead, but we are not mourning. With all our hands we bury you deep."
+shortDescription: "You are dead, but we are not mourning."
 color: 93313c
 ---
 
