@@ -7,7 +7,7 @@
     </div>
     <div class="description">
       <h1 class="title">{{ .Title }}</h1>
-      <span>{{ .Params.shortDescription }}</span>
+      <span>{{ .Params.shortDescription | safeHTML }}</span>
     </div>
   </a>
 </div>

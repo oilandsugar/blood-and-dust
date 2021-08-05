@@ -2,9 +2,10 @@
 title: Weirdos
 date: "2021-07-19"
 cover: "/img/weirdos/DSC03059.jpg"
-description: ""
-shortDescription: ""
+description: "<span class='inverted'>✝✝✝</span>"
+shortDescription: "<span class='inverted'>✝✝✝</span>"
 color: "59aa7f"
+secondaryColor: "59aa7f"
 draft: false
 ---
 

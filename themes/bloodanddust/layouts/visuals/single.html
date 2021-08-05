@@ -47,7 +47,7 @@
             {{ with .Params.songlink }}
               <div class="song-link"><a href="{{ . }}" target="_blank" aria-label="Link to the song (opens in a new window)" title="Link to the song (opens in a new window)">Listen on soundcloud</a></div>
             {{ end }}
-            <p class="description darker" style="color:#{{ .Params.secondaryColor }}">{{ .Description }}</p>
+            <p class="description darker" style="color:#{{ .Params.secondaryColor }}">{{ .Description | safeHTML }}</p>
           </header>
           {{ .Content }}
         </div>
