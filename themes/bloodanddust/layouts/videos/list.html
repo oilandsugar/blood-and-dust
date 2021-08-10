@@ -3,9 +3,9 @@
 
 <!-- Main -->
   <main id="main" class="videos-page big-padding-top big-padding-bottom">
-    <h1 class="align-center">Videos</h1>
+    <h1 class="align-center" id="video-title">Videos</h1>
     <section class="big-padding-bottom">
-      <div class="projects-grid">
+      <div class="videos">
         {{ range .Pages }}
           {{ partial "videoproject.html" . }}
         {{ end }}
