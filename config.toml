@@ -4,6 +4,12 @@ languageCode = "en-us"
 title = "Blood and Dust"
 theme = "bloodanddust"
 
+[params]
+image = "/img/preview.png"
+desc = "Blood and Dust is a collaboration of two dark queerdos inspired by horror cinema and occultism. Part horror drone, part spookfolk, part post-rock, they blend synth and cello into nightmarish auditory rituals."
+author = "Blood and Dust"
+newAlbumOut = false
+
 [[menu.main]]
 name = "Music"
 url = "/music/"
@@ -21,9 +27,5 @@ name = "Merch"
 url = "https://blood-and-dust.bandcamp.com/merch/"
 weight = 5
 
-
 [markup.goldmark.renderer]
 unsafe= true
-
-[params]
-newAlbumOut = false
