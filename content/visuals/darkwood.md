@@ -13,6 +13,14 @@ draft: false
 Inspired by the art and music of [Darkwood](https://arthurkordas.bandcamp.com/album/darkwood-original-video-game-soundtrack).
 {{% /gridItem %}}
 
+{{% gridItem start="2" end="7" %}}
+
+<div class="video-container hd">
+  <iframe src="https://www.youtube.com/embed/PfzxtGcblPo?rel=0" title="Deep in the Dark Woods" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+{{% /gridItem %}}
+
 {{% gridItem start="1" end="8" %}}
 ![](/img/darkwood/DSC03541.jpg)
 {{% /gridItem %}}
