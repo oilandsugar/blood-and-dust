@@ -4,13 +4,16 @@
 <!-- Main -->
 
 <main id="main">
-    <section class="content big-padding-top big-padding-bottom">
-      <div class="wrap big-padding-top big-padding-bottom">
-          {{ .Render "header" }}
-          <div id="content" class="politics">
-              {{ .Content }}
-          </div>
-      </div>
+  <div class="hero-img">
+    <img class="back-img" src="/img/back-rites-low-transparent.png" />
+  </div>
+  <section class="content big-padding-top big-padding-bottom">
+    <div class="wrap big-padding-top big-padding-bottom">
+      {{ .Render "header" }}
+        <div id="content" class="politics">
+          {{ .Content }}
+        </div>
+    </div>
   </section>
 </main>
 

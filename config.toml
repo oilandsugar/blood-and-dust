@@ -19,6 +19,10 @@ name = "Visuals"
 url = "/visuals/"
 weight = 2
 [[menu.main]]
+name = "Videos"
+url = "/videos/"
+weight = 3
+[[menu.main]]
 name = "Politics"
 url = "/politics/"
 weight = 4
