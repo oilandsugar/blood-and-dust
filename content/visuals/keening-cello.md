@@ -17,8 +17,12 @@ draft: false
 {{% gridItem start="1" end="5" %}}
 ![](/img/keening-cello/DSC03295.png)
 {{% /gridItem %}}
+{{% gridItem start="5" end="7" %}}
+![](/img/keening-cello/cursing-stone-2.png)
+{{% /gridItem %}}
 {{% gridItem start="2" end="4" %}}
 ![](/img/keening-cello/DSC03294.png)
+![](/img/keening-cello/cursing-stone-1.png)
 {{% /gridItem %}}
 {{% gridItem start="4" end="7" %}}
 ![](/img/keening-cello/DSC03312.png)
