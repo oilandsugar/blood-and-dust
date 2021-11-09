@@ -6,7 +6,8 @@ description: "You look tired. I don’t suppose you’ve heard it, have you? The
 shortDescription: "The whole forest wants to devour you."
 color: 234545
 secondaryColor: 234545
-draft: false
+song: "/music/in-the-dark-dark-woods.mp3"
+songlink: "https://soundcloud.com/blood-and-dust/in-the-dark-dark-woods"
 ---
 
 {{% gridItem start="3" end="6" text="true" centered="true" %}}

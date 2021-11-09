@@ -1,13 +1,12 @@
 ---
-title: In The Dark Dark Woods
+title: "Children of the Forest"
 date: "2021-11-04"
 cover: "/img/dark-dark-woods/DSC04398.jpg"
 description:
-  ""
+  "Let’s go back to the woods, for the city streets are slaked with poison. Let’s sleep beneath the trees, because the mercury glow of streetlights has stolen dreams right out of our heads. Let’s fill our lungs with pine and earth together, let it raise us to the canopy, the stars, for the city has fucked our circuitry. Never believed those stories as a kid that the forest was a dangerous place; the danger was always inside, wearing masks with false words and idols. The forest is a good place to hide, to belong. To connect with the lost child behind the curtain of consciousness. To bury the parts of ourselves that died. To resurrect. To banish. To remember. To feel. To be alive."
 shortDescription:
-  ""
-song: "/music/in-the-dark-dark-woods.mp3"
-songlink: "https://soundcloud.com/blood-and-dust/in-the-dark-dark-woods"
+  "Let’s go back to the woods, for the city streets are slaked with poison. Let’s sleep beneath the trees, because the mercury glow of streetlights has stolen dreams right out of our heads."
+
 ---
 
 {{% gridItem start="2" end="7" %}}
