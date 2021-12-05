@@ -3,9 +3,9 @@ title: "Night in the cemetery"
 date: "2021-12-01"
 cover: "/img/night-cemetery/DSC05252.jpg"
 description:
-  ""
+  "And when the veil opens we dance with the dead."
 shortDescription:
-  ""
+  "And when the veil opens we dance with the dead."
 ---
 
 {{% gridItem start="2" end="7" %}}
