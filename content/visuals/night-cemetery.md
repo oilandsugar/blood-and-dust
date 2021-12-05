@@ -1,5 +1,5 @@
 ---
-title: "Night in the cemetery"
+title: "Night in the Cemetery"
 date: "2021-12-01"
 cover: "/img/night-cemetery/DSC05252.jpg"
 description:
