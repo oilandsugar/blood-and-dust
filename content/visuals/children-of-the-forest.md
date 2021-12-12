@@ -43,5 +43,5 @@ shortDescription:
 ![](/img/dark-dark-woods/DSC04507.jpg)
 {{% /gridItem %}}
 {{% gridItem start="1" end="8" %}}
-![](/img/dark-dark-woods/DSC04486.jpg)
+![](/img/dark-dark-woods/welcomethedarkness.jpg)
 {{% /gridItem %}}

@@ -43,6 +43,9 @@ Inspired by the art and music of [Darkwood](https://arthurkordas.bandcamp.com/al
 {{% gridItem start="1" end="7" %}}
 ![](/img/darkwood/DSC03582.jpg)
 {{% /gridItem %}}
+{{% gridItem start="2" end="4" %}}
+![](/img/darkwood/cross.png)
+{{% /gridItem %}}
 {{% gridItem start="4" end="8" %}}
 ![](/img/darkwood/DSC03513.jpg)
 {{% /gridItem %}}
@@ -51,6 +54,7 @@ Inspired by the art and music of [Darkwood](https://arthurkordas.bandcamp.com/al
 {{% /gridItem %}}
 {{% gridItem start="1" end="4" %}}
 ![](/img/darkwood/DSC03556.jpg)
+![](/img/darkwood/shovel.png)
 {{% /gridItem %}}
 {{% gridItem start="4" end="7" %}}
 ![](/img/darkwood/DSC03583.jpg)
