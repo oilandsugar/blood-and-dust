@@ -1,6 +1,6 @@
 ---
 title: "Void to Void"
-date: "2021-11-04"
+date: "2021-12-12"
 cover: "/img/coffin/DSC05668.jpg"
 description:
   ""
