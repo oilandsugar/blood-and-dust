@@ -3,7 +3,7 @@ title: "Void to Void"
 date: "2021-12-12"
 cover: "/img/coffin/DSC05668.jpg"
 description:
-  "Resurrected by spite and sorrow, prying open the lock hand-forged in bygone ages of fearful silence, taking hold of the chains to reclaim oneself and shake out the rage. Scream into the face of death, of darkness, climb atop it, crawl within it, transform into fury-eyed madness—a beast!—for therein lies one’s power. No person has advantages above the beast, they say—we all go to the same place when we die, all are from the the void, and to the void all return. But betwixt the void is a time to destroy, a time to rebuild; a time to fight, a time to rest; a time to grieve, a time to heal, a time to live."
+  "Resurrected by spite and sorrow, prying open the lock hand-forged in bygone ages of fearful silence, taking hold of the chains to reclaim oneself and shake out the rage. Scream into the face of death, of darkness, climb atop it, crawl within it, transform into fury-eyed madness—a beast!—for therein lies one’s power. No person has advantages above the beast, they say—we all go to the same place when we die, all are from the the void, and to the void all return.
 shortDescription:
   "All are from the the void, and to the void all return."
 color: 4a3f5f
