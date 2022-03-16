@@ -16,7 +16,15 @@
       <h1 class="align-center medium-padding-bottom">Singles</h1>
       <div class="projects-grid">
         {{ range where .Pages "Type" "music" }}
-          {{ if not .Params.album }}
+          {{ if and (not .Params.album) (not .Params.collab) }}
+            {{ partial "musicproject.html" . }}
+          {{ end}}
+        {{ end }}
+      </div>
+      <h1 class="align-center medium-padding-top medium-padding-bottom">Collaborations and Compilations</h1>
+      <div class="projects-grid">
+        {{ range where .Pages "Type" "music" }}
+          {{ if .Params.collab }}
             {{ partial "musicproject.html" . }}
           {{ end}}
         {{ end }}
