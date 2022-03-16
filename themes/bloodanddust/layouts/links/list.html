@@ -1,0 +1,34 @@
+{{ partial "header-minimal" . }}
+
+<main>
+  <div class="flex-row big-padding-top big-padding-bottom links-page">
+    <article>
+      <div class="wrap">
+        <h1 class="medium-padding-bottom">{{ .Title }}</h1>
+        {{ .Content }}
+        <section class="links">
+          <div class="wrap align-center big-padding-bottom">
+            <div class="separator"><img src="/img/separator.svg" alt="" /></div>
+            <a href="https://blood-and-dust.bandcamp.com/">Bandcamp</a>
+            <div class="separator"><img src="/img/separator.svg" alt="" /></div>
+            <a href="https://soundcloud.com/blood-and-dust/">Soundcloud</a>
+            <div class="separator"><img src="/img/separator.svg" alt="" /></div>
+            <a href="https://blood-and-dust.bandcamp.com/merch">Merch</a>
+            <div class="separator"><img src="/img/separator.svg" alt="" /></div>
+            <a href="https://www.instagram.com/blood.and.dust/">Instagram</a>
+            <div class="separator"><img src="/img/separator.svg" alt="" /></div>
+            <a href="https://www.youtube.com/channel/UCdAPA7gDzEDL4gzJNCVygyw"
+              >YouTube</a
+            >
+            <div class="separator"><img src="/img/separator.svg" alt="" /></div>
+            <div class="align-center big-padding-top">
+              <img class="drips" src="/img/drips.svg" alt="" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+</main>
+
+{{ partialCached "footer" . }}

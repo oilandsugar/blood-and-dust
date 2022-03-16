@@ -841,6 +841,18 @@ a:hover {
   }
 }
 
+/* --- Links --- */
+
+.links-page h2 {
+  line-height:32px;
+  margin-top:8px;
+  margin-bottom:8px;
+}
+
+.links-page {
+  text-align:center;
+}
+
 /* --------------------------------
 //////////// FOOTER ///////////////
 ---------------------------------*/
