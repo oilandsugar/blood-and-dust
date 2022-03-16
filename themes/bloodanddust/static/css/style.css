@@ -849,6 +849,10 @@ a:hover {
   margin-bottom:8px;
 }
 
+.links-page article {
+  width:100%;
+}
+
 .links-page {
   text-align:center;
 }
