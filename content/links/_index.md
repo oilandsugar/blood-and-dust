@@ -9,6 +9,8 @@ desc = "A page listing some links to include in social media profiles"
 
 ## [Crust - a collaboration with Library of the Occult](https://libraryoftheoccult.bandcamp.com/album/crust-narrated-by-peter-baker)  
 
+<div class="separator"><img src="/img/separator.svg" /></div>
+
 ## [New single: Around Your Grave I'll Light a Ring of Fire](https://blood-and-dust.bandcamp.com/track/around-your-grave-ill-light-a-ring-of-fire)  
 
 <div class="separator"><img src="/img/separator.svg" /></div>
