@@ -7,6 +7,10 @@ desc = "A page listing some links to include in social media profiles"
 
 <div class="separator"><img src="/img/separator.svg" /></div>
 
+## [Get CRUST on vinyl](https://blood-and-dust.bandcamp.com/merch/crust-gatefold-vinyl)  
+
+<div class="separator"><img src="/img/separator.svg" /></div>
+
 ## [Crust - a collaboration with Library of the Occult](https://libraryoftheoccult.bandcamp.com/album/crust-narrated-by-peter-baker)  
 
 <div class="separator"><img src="/img/separator.svg" /></div>
